@@ -13,10 +13,9 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var minionsFunImage: WKInterfaceImage!
-    
-    override init(context: AnyObject?) {
-        // Initialize variables here.
-        super.init(context: context)
+  
+    override func awakeWithContext(context: AnyObject?) {
+        super.awakeWithContext(context)
         
         minionsFunImage.setImageNamed("frame")
         
